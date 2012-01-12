@@ -42,7 +42,7 @@ make_command_method = (command_name, expected_response, sends_data) ->
     @send.apply(this, args)
 
     if data
-    	@send data
+      @send data
 
     @handlers.push([new ResponseHandler(expected_response), callback])
     return
